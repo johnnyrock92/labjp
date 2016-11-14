@@ -1,7 +1,6 @@
 /* zlicz znaki odstępu, tabulacji
 {
 }i nowego wiersza */
-/*Janusz Schonrock 246654*/
 #include <stdio.h>
 
 int main ()
