@@ -10,6 +10,8 @@ int main() {
     char ithchar;
     string chartostring;
     string substring;
+    bool stringequal;
+    int stringcompare;
 
     printf("wyraz1: \t%s\nwyraz2: \t%s\n\n",wyraz1,wyraz2);
 
@@ -51,6 +53,28 @@ int main() {
     */
     substring=SubString(calywyraz,0,5);
     printf("SubString: \t%s",substring);
+    printf("\n");
+
+    /* StringEqual - sluzy do porownania dwoch lancuchow
+       Jeżeli są takie same zwraca 1, czyli (True)
+       Jeżeli nie są te same zwraca 0, czyli (False)
+    */
+    stringequal=StringEqual(wyraz1, wyraz2);
+    if (stringequal == 1)
+      printf("StringEqual: \t%d (True)", stringequal);
+    else
+      printf("StringEqual: \t%d (False)", stringequal);
+    printf("\n");
+
+    /* StringCompare - sluzy do porownania dwoch lancuchow
+       Jeżeli np. rezultat wynosi -4 to oznacza ze lancuchy roznia sie 4 znakami
+       Jeżeli np. rezultat wynosi 0 to oznacza ze lancuchy sa takie same i nie roznia sie znakami
+    */
+    stringcompare=StringCompare(wyraz1, wyraz2);
+    if (stringcompare < 0)
+      printf("StringCompare: \t%d (Lancuchy sie roznia)", stringcompare);
+    else
+      printf("StringCompare: \t%d (Lancuchy sa takie same)", stringcompare);
     printf("\n");
 
     return 0;
