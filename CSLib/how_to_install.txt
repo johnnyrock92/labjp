@@ -1,0 +1,8 @@
+Po pobraniu cslib.tar.bz2 rozpakowujemy archiwum, wykonujemy make i kopiujemy skrypt gccx, np. do $HOME/bin (o ile mamy ten katalog w ścieżce wyszukiwania PATH):
+
+$ tar jxvf cslib-wb.tar.bz2
+$ cd cslib-wb
+$ make
+$ cp gccx ~/bin/
+
+W katalogu cslib-wb w plikach *.h jest dokumentacja wszystkich funkcji.
